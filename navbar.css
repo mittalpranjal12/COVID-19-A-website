@@ -1,0 +1,271 @@
+@import url(https://fonts.googleapis.com/css?family=Bebas+Neue:regular);
+@import url(https://fonts.googleapis.com/css?family=Pacifico:regular);
+
+body,html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-image: linear-gradient(
+    119deg,
+    rgba(8, 95, 76, 0.76),
+    rgba(94, 218, 197, 0.5)
+    );
+    opacity: 1.8;
+}
+
+.bgimage {
+    top:2%;
+    margin: 0px 50px;
+    border-radius: 5px;
+    position: absolute;
+    padding: 70px;
+    overflow: hidden;
+}
+#hands {
+    border-radius: 5px;
+    margin: 0px 0px 400px 30px;
+    
+}
+
+#sneeze {
+    border-radius: 5px;
+    margin: 0px 0px 400px 0px;
+}
+
+#cold{
+    border-radius: 5px;
+    position: absolute;
+    left: 150px;
+    margin-top: 135px;
+}
+
+#social{
+    border-radius: 5px;
+    left: 50px;
+    position: absolute;
+    margin-top: 270px;
+}
+
+#hand {
+    border-radius: 5px;
+    left: 255px;
+    position: absolute;
+    margin-top: 270px;
+    
+}
+
+#mask {
+    border-radius: 5px;
+    left: 150px;
+    position: absolute;
+    margin-top: 390px;
+}
+
+.vl {
+    border-left: 6px rgb(3, 126, 115);
+    border-style: dotted;
+    border-width: thin;
+    height: 660px;
+    position: absolute;
+    left: 57%;
+    margin-left: -3px;
+    top: 0;
+}
+
+.topright {
+    font-family: sans-serif;
+    position: absolute;
+    top: 90px;
+    right: 150px;
+    font-weight: bold;
+    color: #042331;
+    font-size: 90px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.sidebar {
+    position: absolute;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #016159;
+    transition: all .5s ease;
+    
+}
+.sidebar header {
+    font-size: 22px;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    background: #013638;
+    user-select: none;
+}
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    border-top: 1px solid rgba(255,255,255,.1);
+    transition: .4s;
+}
+ul li:hover a{
+    padding-left: 50px;
+}
+.sidebar ul a i{
+    margin-right: 16px;
+}
+#check{
+    display: none;
+}
+label #btn,label #cancel{
+    position: absolute;
+    background: #042331;
+    border-radius: 3px;
+    cursor: pointer;
+}
+label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel{
+    left: 195px;
+}
+#check:checked ~ section{
+    margin-left: 250px;
+}
+section{
+    
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all .5s;
+}
+
+
+
+.rightside h5 {
+    
+    position: absolute;
+    top: 240px;
+    right: 210px;
+    color: #d3760c;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.rightside h4 {
+    
+    position: absolute;
+    top: 330px;
+    right: 190px;
+    color: black;
+    font-family: 'Pacifico';
+    font-size: 30px;
+}
+
+.rightside{ 
+    width: 50%; 
+    height: 450px; 
+    color: white; 
+    text-align: center; 
+    margin-top: 80px; 
+    padding: 40px;
+}
+
+
+.button {
+    border-radius: 5px;
+    background: linear-gradient(57deg, rgb(10, 206, 190), rgb(2, 83, 77) ); 
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    background: linear-gradient(57deg, rgb(2, 83, 77), rgb(10, 206, 190) ); 
+}
+
+.button:hover span {
+    padding-right: 30px;
+    background: linear-gradient(57deg, rgb(2, 83, 77), rgb(10, 206, 190) );
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+    background: linear-gradient(57deg, rgb(2, 83, 77), rgb(10, 206, 190), ); 
+}
+
+#image {
+    position: relative;
+    bottom: 8px;
+    left: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+

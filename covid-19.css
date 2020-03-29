@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comic+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    background: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    overflow: hidden;
+    background-color: rgb(4, 11, 17);
+    text-align: center;
+    text-indent: 40em;
+    position: fixed;
+    top: 0;
+}
+
+.container a {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    
+    padding: 20px 47px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.container a::before {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color: white;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.container a:hover::before {
+    width:100%;
+    transition:all .5s;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 40px 0px;
+    padding: 0;
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    overflow: auto;
+    border-radius: 5px;
+    border: black;
+}
+
+li a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 35px 0 8px 45px;
+    font-size: 25px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+li a.active { 
+    background-color: black; color: white;
+    
+}
+
+li a:hover:not(.active) { 
+    background-color: black; color: white;
+} 
+
+.text {
+    height: 1000px;
+    margin-left: 20%;
+    margin-top: 40px;
+}
+
+.heading {
+    margin: 50px;
+}
+
+h5 {
+    color: black;
+    font-weight: bolder;
+    font-size: 40px;
+    display: block;
+    font-family: 'Acme', sans-serif;
+    float: right;
+    
+}
+
+.white {
+    border-color: aliceblue;
+}
+
+#image {
+    margin-top: 0px;
+    float: left;
+}
+
+p{
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Comic Neue', cursive;
+}
+
+.pic {
+    display: block;
+    float: inherit;
+    margin-top: 490px;
+    margin-left: 400px;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 30px;
+    font-family: sans-serif;
+    
+}
+
+ol {
+    font-size: 20px;
+    font-family: 'Comic Neue', cursive;
+}
+
+.para {
+    list-style-type: disc;
+    font-family: 'Comic Neue', cursive;
+    font-size: 20px;
+}
+
+.new {
+    margin-left: 20%;
+}
+
+.uff {
+    list-style-type: square;
+    font-family: 'Comic Neue', cursive;
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: square;
+    font-family: 'Comic Neue', cursive;
+    font-size: 20px;
+}
+
+.precaution {
+    display: block;
+    float: left;
+    margin-right: 70px;
+}
+
+h2{
+    font-size: 38px;
+    font-family: 'Dancing Script', cursive;
+}
